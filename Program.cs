@@ -7,13 +7,13 @@ namespace Exam_OOP
     {
         static void Main(string[] args)
         {
-            
-            bool run= true;
-            
-                Console.WriteLine("============== Create New Subject =============");
-                string NameOfSubject = H.Helper.GetString("Enter Subject Name: ");
-                int NumberOfSubject = H.Helper.GetNumber("Enter Id Subject:", 1, 200);
-                S.Subject subject = new S.Subject(NumberOfSubject, NameOfSubject);
+
+            bool run = true;
+
+            Console.WriteLine("============== Create New Subject =============");
+            string NameOfSubject = H.Helper.GetString("Enter Subject Name: ");
+            int NumberOfSubject = H.Helper.GetNumber("Enter Id Subject:", 1, 200);
+            S.Subject subject = new S.Subject(NumberOfSubject, NameOfSubject);
             do
             {
                 Console.Clear();
@@ -35,8 +35,6 @@ namespace Exam_OOP
                         break;
                 }
             } while (run);
-
-
         }
     }
 }
