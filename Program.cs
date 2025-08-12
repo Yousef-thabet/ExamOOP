@@ -7,6 +7,13 @@ namespace Exam_OOP
     {
         static void Main(string[] args)
         {
+            #region console set
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.Clear();
+
+            Console.Title = "Examiation System";
+            Console.ForegroundColor = ConsoleColor.Yellow; 
+            #endregion
 
             bool run = true;
 
