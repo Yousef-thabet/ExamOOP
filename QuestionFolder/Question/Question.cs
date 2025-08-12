@@ -21,6 +21,14 @@ namespace Exam_OOP.Question
             Answers = answers;
             RightAnswer = rightAnswer;
         }
+        /// <summary>
+        /// Displays a question to the user and updates the total marks based on the user's response.
+        /// </summary>
+        /// <remarks>The method is abstract and must be implemented by a derived class. The implementation
+        /// should define how the question is presented and how the user's response affects the <paramref
+        /// name="totalMarks"/> value.</remarks>
+        /// <param name="totalMarks">A reference to the total marks accumulated so far. This value will be updated based on the user's response
+        /// to the question.</param>
         public abstract void ShowQuestion(ref double totalMarks);
         public override string ToString()
         {

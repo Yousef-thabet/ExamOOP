@@ -20,11 +20,17 @@ namespace Exam_OOP.Question
                 totalMarks += Mark;
 
         }
-        public static TrueFalseQuestion CreateTrueFalseQuestion()
+        /// <summary>
+        /// creates a True/False question with user input.
+        /// header is used to identify the question type.
+        /// </summary>
+        /// <param name="header"></param>
+        /// <returns></returns>
+        public static TrueFalseQuestion CreateTrueFalseQuestion(string header)
         {
-            string header = H.Helper.GetString("Question head: ");
+            
             string body = H.Helper.GetString("Question body: ");
-            double mark = H.Helper.GetNumber("Enter Question Mark: ");
+            double mark = H.Helper.GetNumber("Enter Question Mark: ",.5,10);
 
             Answer[] answers = new Answer[]
             {

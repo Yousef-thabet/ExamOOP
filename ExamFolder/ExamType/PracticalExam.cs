@@ -9,9 +9,8 @@ namespace Exam_OOP.Exam
     {
         public PracticalExam(int numOfQusetion, int time, Q.Question[] Questions) : base(numOfQusetion, time, Questions)
         {
-           
-        }
 
+        }
         public override void ShowExam()
         {
             double totalMarks = 0;

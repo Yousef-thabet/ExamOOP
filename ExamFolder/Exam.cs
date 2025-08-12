@@ -18,7 +18,6 @@ namespace Exam_OOP.Exam
             this.Questions = __questions;
             FullMarks = __questions.Sum(q => q.Mark);
         }
-
         public abstract void ShowExam();
         public override string ToString()
         {

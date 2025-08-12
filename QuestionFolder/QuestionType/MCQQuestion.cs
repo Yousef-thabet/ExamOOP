@@ -21,11 +21,11 @@ namespace Exam_OOP.Question
                 totalMarks += Mark;
 
         }
-        public static MCQQuestion CreateMCQQuestion()
+        public static MCQQuestion CreateMCQQuestion(string header)
         {
-            string header = H.Helper.GetString("Question head: ");
+            
             string body = H.Helper.GetString("Question body: ");
-            double mark = H.Helper.GetNumber("Enter Question Mark: ");
+            double mark = H.Helper.GetNumber("Enter Question Mark: ",.5,10);
 
             int numChoices = H.Helper.GetNumber("Enter Number of Choices (3-6): ", 3, 6);
             Answer[] answers = new Answer[numChoices];
