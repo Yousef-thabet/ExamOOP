@@ -22,10 +22,10 @@ namespace Exam_OOP.Question
 
         }
 
-        public static MCQQuestion CreateMCQQuestion(string header)
+        public static MCQQuestion CreateMCQQuestion(int __num)
         {
             #region variable
-
+            string header = $"Q{__num}";
             string body = H.Helper.GetString("Question body: ");
             double mark = H.Helper.GetNumber("Enter Question Mark: ", .5, 10);
             int numChoices = H.Helper.GetNumber("Enter Number of Choices (3-6): ", 3, 6); 

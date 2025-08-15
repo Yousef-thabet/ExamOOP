@@ -26,9 +26,10 @@ namespace Exam_OOP.Question
         /// </summary>
         /// <param name="header"></param>
         /// <returns></returns>
-        public static TrueFalseQuestion CreateTrueFalseQuestion(string header)
+        public static TrueFalseQuestion CreateTrueFalseQuestion(int __num)
         {
-            
+
+            string header = $"Q{__num}";
             string body = H.Helper.GetString("Question body: ");
             double mark = H.Helper.GetNumber("Enter Question Mark: ",.5,10);
 

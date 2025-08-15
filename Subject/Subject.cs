@@ -49,10 +49,10 @@ public class Subject
                 int qType = H.Helper.GetNumber("Enter Question Type (1: MCQ, 2: True/False): ", 1, 2);
                 if (qType == 1)
                 {
-                    _questions[i] = Q.MCQQuestion.CreateMCQQuestion($"Q{++i}");
+                    _questions[i] = Q.MCQQuestion.CreateMCQQuestion(i);
                 }else if(qType == 2)
                 {
-                    _questions[i] = Q.TrueFalseQuestion.CreateTrueFalseQuestion($"Q{++i}");
+                    _questions[i] = Q.TrueFalseQuestion.CreateTrueFalseQuestion(i);
                 }
 
             }
@@ -63,7 +63,7 @@ public class Subject
         {
             for (int i = 0; i < _numOfQuestions; i++)
             {  
-             _questions[i] = Q.MCQQuestion.CreateMCQQuestion($"Q{++i}");
+             _questions[i] = Q.MCQQuestion.CreateMCQQuestion(i);
             }
 
             
@@ -121,6 +121,7 @@ public class Subject
    /// </summary>
    /// <remarks>Prompts the user to enter an exam ID and displays the details of the corresponding exam if it
    /// exists. If the entered ID is invalid or no exams are available, an appropriate message is displayed.</remarks>
+   
     public void PrintExams()
         {
         
